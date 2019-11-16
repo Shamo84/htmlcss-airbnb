@@ -7,12 +7,20 @@
 .menu-container {
   position: fixed;
   top: 0;
-  left: 50%;
-  width: 800px;
+  left: 60%;
+  width: 700px;
   height: 80px;
   transform: translateX(-50%);
   background-color: green;
   z-index: 1;
+  text-align: center;
+}
+
+.logo {
+ height: 100%;
+ width: auto;
+ top: 0;
+ padding: 5px;
 }
 
 .container {
@@ -28,10 +36,16 @@
   height: 300px;
   width: 400px;
   margin: 10px;
+}
+
+.image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
-img {
+.foto-citta {
   position: absolute;
   max-height: 100%;
   left: 50%;
@@ -53,12 +67,16 @@ img {
   left: 1.5%;
   top: 1.5%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  border-radius: 2px;
 }
 
 [class^="city"]:hover .grey-area{
   visibility: hidden;
   cursor: pointer;
+}
+
+[class^="city"]:hover .buttons-shadow{
+visibility: hidden;
 }
 
 [class^="city"]:hover p{
